@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Sorteio</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <h1>SORTEIO <span>{re</span>programa<span>}</span></h1>
+        <div class="formulario">
+            <form action="" onsubmit="sortear()">
+                <div class="item">
+                    <label for="item">Ítem a ser sorteado</label>
+                    <input type="text" name="item">
+                </div>
+                <div class="quantidade">
+                    <label for="quantidade">Quantidade</label>
+                    <input type="text" name="quantidade">
+                </div>
+                <div>
+                    <input class="botao" type="submit" value="Sortear">
+                </div>
+            </form>
+        </div>
+        <div class="resultado">
+            <div>
+                <p>RESULTADO</p>
+                <p id="sorteadas"></p>
+            </div>
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
