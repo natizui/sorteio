@@ -13,23 +13,34 @@
             <form action="" onsubmit="sortear()">
                 <div class="item">
                     <label for="item">Ítem a ser sorteado</label>
-                    <input type="text" name="item">
+                    <!-- <input id="brinde" type="text" name="item"> --> 
+                    <select required name="item" id="brinde">
+                        <option value="">Selecione um brinde</option>
+                        <option value="adesivoArquillian.xml">Adesivo Arquillian</option>
+                        <option value="adesivoAtomic.xml">Adesivo Atomic</option>
+                        <option value="adesivoBranco.xml">Adesivo Branco</option>
+                        <option value="adesivoOVirt.xml">Adesivo oVirt</option>
+                        <option value="adesivoVermelho.xml">Adesivo Vermelho</option>
+                        <option value="bottom.xml">Bottom</option>
+                        <option value="carteira.xml">Carteira</option>
+                        <option value="sacola.xml">Sacola</option>
+                    </select>
                 </div>
                 <div class="quantidade">
                     <label for="quantidade">Quantidade</label>
-                    <input type="text" name="quantidade">
+                    <input required id="quantidade" type="text" name="quantidade">
                 </div>
                 <div>
                     <input class="botao" type="submit" value="Sortear">
                 </div>
             </form>
-        </div>
+        <!-- </div>
         <div class="resultado">
             <div>
                 <p>RESULTADO</p>
-                <p id="sorteadas"></p>
+                <p id="resultado"></p>
             </div>
-        </div>
+        </div> -->
         
         <script src="script.js"></script>
     </body>
